@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>Title</title>
+     <link href="css/styles.css" type="text/css" rel="stylesheet"></link>
+ </head>
+ <body>
+ <div>
+     <label for="universities">Search for universities</label>
+     <input type="text" placeholder="" id="universities" onkeyup="keyupFunction()" onkeydown="keydownFunction()">
+     <label for="country">Select Country</label>
+     <select id="country" onchange="searchLoad()">
+         <option>none</option>
+         <option>US</option>
+         <option>UK</option>
+         <option>India</option>
+     </select>
+ </div>
+ 
+ <div id="DynamicTable"></div>
+ 
+ <div class="final-wrap">
+     <b><div id="items"></div></b>
+ 
+     <div class="flex-container">
+         <div>
+             <button onclick="buttonAction('prev')" id="prevButton">
+                 prev
+             </button>
+         </div>
+         <div id="currentPage">
+ 
+         </div>
+         <div>
+             <button onclick="buttonAction('next')" id="nextButton">
+                 next
+             </button>
+         </div>
+     </div>
+ </div>
+ 
+ <script src="js/core.js" type="text/javascript"></script>
+ </body>
+ </html>

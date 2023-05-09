@@ -1,0 +1,20 @@
+table, th, td {
+    border:1px solid black;
+}
+.flex-container {
+    display: flex;
+    justify-content: end
+}
+
+.flex-container > div {
+    margin: 10px;
+    font-size: 14px;
+}
+.final-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px
+}
+th, td{
+    min-width: 300px;
+}
